@@ -242,7 +242,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Blogs<span class="badge">9</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Blogs<span class="badge">8</span></a>
 
   </li>
         
@@ -261,7 +261,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">5</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">4</span></a>
 
   </li>
         
@@ -377,7 +377,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.jiatianzhi.com/leetcode09/">
+    <link itemprop="mainEntityOfPage" href="http://www.jiatianzhi.com/leetcode13/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="贾 添 植">
@@ -397,7 +397,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/leetcode09/" class="post-title-link" itemprop="url">LeetCode 09 回文数</a>
+                <a href="/leetcode13/" class="post-title-link" itemprop="url">LeetCode 13 罗马数字转整数</a>
               
             
           </h1>
@@ -446,15 +446,23 @@
       
         
           
-            <h4 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h4><p>判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。</p>
+            <h4 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h4><p>罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">字符          数值</span><br><span class="line">I             1</span><br><span class="line">V             5</span><br><span class="line">X             10</span><br><span class="line">L             50</span><br><span class="line">C             100</span><br><span class="line">D             500</span><br><span class="line">M             1000</span><br></pre></td></tr></table></figure>
+<p>例如， 罗马数字 2 写做 II ，即为两个并列的 1。12 写做 XII ，即为 X + II 。 27 写做  XXVII, 即为 XX + V + II 。</p>
+<p>通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 IIII，而是 IV。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 IX。这个特殊的规则只适用于以下六种情况：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">I 可以放在 V (<span class="number">5</span>) 和 X (<span class="number">10</span>) 的左边，来表示 <span class="number">4</span> 和 <span class="number">9</span>。</span><br><span class="line">X 可以放在 L (<span class="number">50</span>) 和 C (<span class="number">100</span>) 的左边，来表示 <span class="number">40</span> 和 <span class="number">90</span>。 </span><br><span class="line">C 可以放在 D (<span class="number">500</span>) 和 M (<span class="number">1000</span>) 的左边，来表示 <span class="number">400</span> 和 <span class="number">900</span>。</span><br></pre></td></tr></table></figure>
+<p>给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。</p>
 <h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><p>示例 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: 121</span><br><span class="line">输出: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;III&quot;</span><br><span class="line">输出: 3</span><br></pre></td></tr></table></figure>
 <p>示例 2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: -121</span><br><span class="line">输出: false</span><br><span class="line">解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;IV&quot;</span><br><span class="line">输出: 4</span><br></pre></td></tr></table></figure>
 <p>示例 3:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: 10</span><br><span class="line">输出: false</span><br><span class="line">解释: 从右向左读, 为 01 。因此它不是一个回文数。</span><br></pre></td></tr></table></figure>
-<h4 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h4><p>你能不将整数转为字符串来解决这个问题吗？</p>
-<h4 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> typing <span class="keyword">import</span> List</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isPalindrome</span><span class="params">(self, x: int)</span> -&gt; bool:</span></span><br><span class="line">        <span class="keyword">if</span> x &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            x2 = str(x)</span><br><span class="line">            x2 = x2[::<span class="number">-1</span>]</span><br><span class="line">            x2 = int(x2)</span><br><span class="line">            <span class="keyword">if</span> x == x2:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;IX&quot;</span><br><span class="line">输出: 9</span><br></pre></td></tr></table></figure>
+<p>示例 4:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;LVIII&quot;</span><br><span class="line">输出: 58</span><br><span class="line">解释: L = 50, V= 5, III = 3.</span><br></pre></td></tr></table></figure>
+<p>示例 5:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;MCMXCIV&quot;</span><br><span class="line">输出: 1994</span><br><span class="line">解释: M = 1000, CM = 900, XC = 90, IV = 4.</span><br></pre></td></tr></table></figure>
+<h4 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> typing <span class="keyword">import</span> List</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">romanToInt</span><span class="params">(self, s: str)</span> -&gt; int:</span></span><br><span class="line">        a = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> s:</span><br><span class="line">            <span class="keyword">if</span> i == <span class="string">'I'</span>:</span><br><span class="line">                a = a + <span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span> i == <span class="string">'V'</span>:</span><br><span class="line">                a = a + <span class="number">5</span></span><br><span class="line">            <span class="keyword">elif</span> i == <span class="string">'X'</span>:</span><br><span class="line">                a = a + <span class="number">10</span></span><br><span class="line">            <span class="keyword">elif</span> i == <span class="string">'L'</span>:</span><br><span class="line">                a = a + <span class="number">50</span></span><br><span class="line">            <span class="keyword">elif</span> i == <span class="string">'C'</span>:</span><br><span class="line">                a = a + <span class="number">100</span></span><br><span class="line">            <span class="keyword">elif</span> i == <span class="string">'D'</span>:</span><br><span class="line">                a = a + <span class="number">500</span></span><br><span class="line">            <span class="keyword">elif</span> i == <span class="string">'M'</span>:</span><br><span class="line">                a = a + <span class="number">1000</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(s)<span class="number">-1</span>):</span><br><span class="line">            m = s[i] + s[i+<span class="number">1</span>]</span><br><span class="line">            <span class="keyword">if</span> m == <span class="string">'IV'</span> <span class="keyword">or</span> m == <span class="string">'IX'</span>:</span><br><span class="line">                a = a - <span class="number">2</span></span><br><span class="line">            <span class="keyword">elif</span> m == <span class="string">'XL'</span> <span class="keyword">or</span> m == <span class="string">'XC'</span>:</span><br><span class="line">                a = a - <span class="number">20</span></span><br><span class="line">            <span class="keyword">elif</span> m == <span class="string">'CD'</span> <span class="keyword">or</span> m == <span class="string">'CM'</span>:</span><br><span class="line">                a = a - <span class="number">200</span></span><br><span class="line">        <span class="keyword">return</span> a</span><br></pre></td></tr></table></figure>
 
           
         
@@ -510,7 +518,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span>
   </nav>
 
 
@@ -554,7 +562,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">Blogs</span>
                   </a>
                 </div>
@@ -579,9 +587,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">Categories</span>
                   </a>
                 </div>

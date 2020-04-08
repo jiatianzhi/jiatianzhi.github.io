@@ -2,7 +2,6 @@ http://www.jiatianzhi.com/leetcode13/
 http://www.jiatianzhi.com/leetcode09/
 http://www.jiatianzhi.com/leetcode07/
 http://www.jiatianzhi.com/leetcode01/
-http://www.jiatianzhi.com/shenduxuexideshuxue/
 http://www.jiatianzhi.com/pythonxuexiziliao/
 http://www.jiatianzhi.com/ruanjiananzhuang1/
 http://www.jiatianzhi.com/xitonganzhuang1/
