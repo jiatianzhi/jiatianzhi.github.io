@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.jiatianzhi.com/contact/index.html</loc>
+    <lastmod>2020-07-06</lastmod>
+  </url>  <url>
+    <loc>http://www.jiatianzhi.com/index/</loc>
+    <lastmod>2020-07-06</lastmod>
+  </url>  <url>
     <loc>http://www.jiatianzhi.com/ruanjiananzhuang1/</loc>
     <lastmod>2020-04-29</lastmod>
   </url>  <url>
@@ -8,12 +14,6 @@
     <lastmod>2020-04-08</lastmod>
   </url>  <url>
     <loc>http://www.jiatianzhi.com/pythonxuexiziliao/</loc>
-    <lastmod>2020-04-08</lastmod>
-  </url>  <url>
-    <loc>http://www.jiatianzhi.com/contact/index.html</loc>
-    <lastmod>2020-04-08</lastmod>
-  </url>  <url>
-    <loc>http://www.jiatianzhi.com/index/</loc>
     <lastmod>2020-04-08</lastmod>
   </url>  <url>
     <loc>http://www.jiatianzhi.com/leetcode13/</loc>
