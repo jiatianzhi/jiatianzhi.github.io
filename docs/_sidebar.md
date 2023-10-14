@@ -7,4 +7,5 @@
     * [javascript](/01/javascript/)
     * [echarts](/01/echarts/)
 
-* 服务器端技术
+* 实用技能
+    * [使用docsify搭建笔记博客](/实用技能/使用docsify搭建笔记博客/)
