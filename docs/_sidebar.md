@@ -8,4 +8,4 @@
     * [echarts](/01/echarts/)
 
 * 实用技能
-    * [使用docsify搭建笔记博客](/实用技能/使用docsify搭建笔记博客/)
+    * [使用docsify搭建笔记博客](/实用技能/使用docsify搭建笔记博客)
